@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.assignment.userService.UserServiceTest.UserServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-02-23T04:15:44" hostname="LAPTOP-3A31BKVN" time="0.271">
+  <properties/>
+  <testcase name="AppupdateUserTest()" classname="com.assignment.userService.UserServiceTest.UserServiceTest" time="0.244"/>
+  <testcase name="AppdeleteUserTest()" classname="com.assignment.userService.UserServiceTest.UserServiceTest" time="0.018"/>
+  <testcase name="createUserTest()" classname="com.assignment.userService.UserServiceTest.UserServiceTest" time="0.006"/>
+  <system-out><![CDATA[09:45:40.952 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [UserServiceTest]: using SpringBootContextLoader
+09:45:40.956 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.assignment.userService.UserServiceTest.UserServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+09:45:40.957 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.assignment.userService.UserServiceTest.UserServiceTest]: UserServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+09:45:40.981 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [UserServiceTest]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+09:45:41.108 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [Y:\Development\workspace\Assignment\springboot-inmemory-database\build\classes\java\main\com\assignment\userService\UserServiceApplication.class]
+09:45:41.111 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.assignment.userService.UserServiceApplication for test class com.assignment.userService.UserServiceTest.UserServiceTest
+09:45:41.246 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [UserServiceTest]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+09:45:41.247 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [UserServiceTest], class annotated with @DirtiesContext [false] with mode [null]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.2)
+
+2023-02-23T09:45:41.489+05:30  INFO 13964 --- [    Test worker] c.a.u.UserServiceTest.UserServiceTest    : Starting UserServiceTest using Java 17.0.2 with PID 13964 (started by YOGESH in Y:\Development\workspace\Assignment\springboot-inmemory-database)
+2023-02-23T09:45:41.491+05:30  INFO 13964 --- [    Test worker] c.a.u.UserServiceTest.UserServiceTest    : No active profile set, falling back to 1 default profile: "default"
+2023-02-23T09:45:42.004+05:30  INFO 13964 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-23T09:45:42.043+05:30  INFO 13964 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interfaces.
+2023-02-23T09:45:42.337+05:30  INFO 13964 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-23T09:45:42.546+05:30  INFO 13964 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:5eb46c97-cffa-45de-9e42-66a128002348 user=SA
+2023-02-23T09:45:42.547+05:30  INFO 13964 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-23T09:45:42.600+05:30  INFO 13964 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-23T09:45:42.646+05:30  INFO 13964 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-02-23T09:45:42.820+05:30  WARN 13964 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-02-23T09:45:42.951+05:30  INFO 13964 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-02-23T09:45:43.487+05:30  INFO 13964 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-23T09:45:43.496+05:30  INFO 13964 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23T09:45:43.878+05:30  WARN 13964 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-23T09:45:44.238+05:30  INFO 13964 --- [    Test worker] c.a.u.UserServiceTest.UserServiceTest    : Started UserServiceTest in 2.953 seconds (process running for 3.965)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
