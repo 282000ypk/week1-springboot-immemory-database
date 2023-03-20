@@ -49,5 +49,5 @@ jobs:
         with:
           app-name: 'inmemorytest'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_CBA1FD5DE2FA41F0A50AE0C4FF1EE2DF }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8EC62D335EB044F4B3C0917AB66CC116 }}
           package: '*.jar'
